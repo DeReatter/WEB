@@ -1,0 +1,411 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<!-- Import Font Awesome untuk Ikon Sosial Media -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f9;
+	margin: 0;
+	padding: 0;
+	}
+	h1 {
+	text-align: center;
+	color: #000000;
+	padding: 20px;
+	margin: 0;
+	}
+	.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	}
+	.card {
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	overflow: hidden;
+	width: calc(20% - 30px);
+	/* 5 card dalam satu baris pada desktop */
+	margin: 15px;
+	transition: transform 0.3s;
+	text-align: center;
+	padding: 15px;
+	}
+	.card:hover {
+	transform: scale(1.05);
+	}
+	.card img {
+	width: 160px;
+	/* Ukuran gambar lebih kecil agar rapi */
+	height: 200px;
+	border-radius: 5px;
+	object-fit: cover;
+	margin-bottom: 10px;
+	}
+	.card h2 {
+	font-size: 16px;
+	color: #333;
+	margin: 5px 0;
+	}
+	.card .title {
+	color: grey;
+	font-size: 12px;
+	margin: 2px 0;
+	}
+	.card p {
+	font-size: 12px;
+	margin: 2px 0;
+	}
+	.card a {
+	text-decoration: none;
+	color: #031684;
+	font-weight: 500;
+	font-size: 12px;
+	}
+	.card a:hover {
+	color: #555;
+	}
+	.social-icons a {
+	margin: 0 3px;
+	color: #031684;
+	font-size: 12px;
+	}
+	.social-icons a:hover {
+	color: #555;
+	}
+	/* Responsif untuk Tablet */
+	@media (max-width: 1024px) {
+	.card {
+	width: calc(33.33% - 30px);
+	/* 3 card dalam satu baris pada tablet */
+	}
+	}
+	/* Responsif untuk Smartphone */
+	@media (max-width: 600px) {
+	.card {
+	width: 90%;
+	/* 1 card per baris pada mobile */
+	}
+	}
+
+    .a-logo {
+        padding-top: 8px;
+    }
+
+    .a-logo a {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid color-mix(in srgb, #010608, transparent 50%);
+        font-size: 16px;
+        /*color: color-mix(in srgb, #010608, transparent 20%);
+        margin-right: 10px;*/
+        transition: 0.3s;
+    }
+
+    .img-logo {
+        width: 70% !important;
+        height: 70% !important;
+        margin: 5px 5px;
+        /*border: black 2px solid;
+        border-radius: 50px !important;*/
+    }
+
+</style>
+<div class="container">
+	<div class="card">
+		<img alt="Ir. Rustam Asnawi, S.T., M.T., Ph.D." 
+		src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" />
+		<h2>Ir. Rustam Asnawi, S.T., M.T., Ph.D.</h2>
+		<p class="title">NIP. 19720127 199702 1 001</p>
+		<p class="title">NIDN. 0027017205</p>
+		<p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:rustam@uny.ac.id">rustam@uny.ac.id</a>
+        </p>
+        <div class="a-logo">
+            <a href="https://scholar.google.com/citations?hl=id&amp;user=1tAoP3MAAAAJ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+            </a> 
+            <a href="https://sinta.kemdikbud.go.id/authors/profile/6029804">
+                <img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+            </a> 
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=35434463300&amp;origin=recordpage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+            </a> 
+            <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/yhZNlFt0BgfRIju-Vq5FmznAzPZ9XkP4ZsKXfD4psgUc9zNPLwM-zF1xGCXX-I-KxuUU6Q==">
+                <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+            </a>
+        </div>
+	</div>
+	<div class="card">
+		<img alt="Sigit Yatmono, S.T., M.T." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Sigit%20Yatmono%2C%20%20S.T.%2C%20M.T.%20Depan.jpg" />
+		<h2>Sigit Yatmono, S.T., M.T.</h2>
+		<p class="title">NIP. 19730125 199903 1 001</p>
+		<p class="title">NIDN. 0025017301</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:s_yatmono@uny.ac.id">s_yatmono@uny.ac.id</a>
+        </p>
+        <div class="a-logo">
+            <a href="https://scholar.google.com/citations?user=XN5AYz0AAAAJ&amp;hl=id&amp;oi=ao">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+            </a> 
+            <a href="https://sinta.kemdikbud.go.id/authors/profile/5975817">
+                <img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+            </a> 
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57209469527">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+            </a> 
+            <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/9KTrHJACaA4CivxHoCNHX7TRLEwJU_HFRi7YmjnAWpR11q5OH1ZQlKYu8yRk5XKQcRdwtA==">
+                <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+            </a>
+        </div>
+	</div>
+	<div class="card">
+		<img alt="Prof. Ir. Moh. Khairudin, S.Pd, S.T., M.T., Ph.D." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Moh.%20Khairudin%2C%20Ph.D%20Depan.jpg" />
+		<h2>Prof. Ir. Moh. Khairudin, S.Pd, S.T., M.T., Ph.D.</h2>
+		<p class="title">NIP. 19790412 200212 1 002</p>
+		<p class="title">NIDN. 0012047901</p>
+		<p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:moh_khairudin@uny.ac.id">moh_khairudin@uny.ac.id</a>
+        </p>
+        <div class="a-logo">
+            <a href="https://scholar.google.com/citations?hl=id&amp;user=qau4BuwAAAAJ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+            </a> 
+            <a href="https://sinta.kemdikbud.go.id/authors/profile/5990720">
+                <img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+            </a> 
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=37361115800&amp;origin=recordpage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+            </a> 
+            <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/MuhXnzxBh-13sO9ZutRtQC9eD52cDKYEGd1XL7flPlzL7f1kw7nRp_5T2wKdQyLTkiJW7g==">
+                <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+            </a>
+        </div>
+	</div>
+	<div class="card">
+		<img alt="Dr. Eng. Sarwo Pranoto, S.T., M.Eng." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dr.%20Eng.%20Sarwo%20Pranoto%2C%20S.T.%2C%20M.Eng.jpg" />
+		<h2>Dr. Eng. Sarwo Pranoto, S.T., M.Eng.</h2>
+		<p class="title">NIP. 19800620 200501 1 005</p>
+		<p class="title">NIDN. 0020068004</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:sarwopranoto@uny.ac.id">sarwopranoto@uny.ac.id</a>
+        </p>
+        <div class="a-logo">
+            <a href="https://scholar.google.com/citations?hl=id&amp;user=Y_1ZD5kAAAAJ">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+            </a> 
+            <a href="https://sinta.kemdikbud.go.id/authors/profile/6659421">
+                <img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+            </a> 
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57190937725&amp;origin=recordpage">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+            </a> 
+            <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/_DEGfi7JXZSlIGmxGTUgkA6L-SeJlmhRsTqIDh4KL1AIP1izDEdxxAuNOPq-G04Wf4cyxg==">
+                <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+            </a>
+        </div>
+	</div>
+</div>
+<div class="container">
+	<div class="card">
+		<img alt="Ariadie Chandra Nugraha, S.T., M.T." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ariadie%20Chandra%20Nugraha%2C%20S.T.%2C%20M.T.Depan.jpg" />
+		<h2>Ariadie Chandra Nugraha, S.T., M.T.</h2>
+		<p class="title">NIP. 19770913 200501 1 002</p>
+		<p class="title">NIDN. 0013097702</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:ariadie@uny.ac.id">ariadie@uny.ac.id</a>
+        </p> 
+		<div class="a-logo">
+            <a href="https://scholar.google.com/citations?user=3TIaGmAAAAAJ&amp;hl=id&amp;oi=ao">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+            </a> <a href="https://sinta.kemdikbud.go.id/authors/profile/5983013">
+                <img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+            </a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57203836399">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+            </a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/RcrPV6qVZ8qvB6r10V6PCSZ7eY8iGGzWNDZH40g5cp0U5TS6Z2ckLJx3SmdPpsOcc18L3A==">
+                <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+            </a>
+        </div>
+	</div>
+	<div class="card">
+		<img alt="Ir. Alex Sandria Jaya Wardhana, M.Eng., IPM, ASEAN. Eng" src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Alex%20Sandria%20Jaya%20Wardhana%2C%20S.Pd.%2C%20M.Eng.%20Depan%20jpg.jpg" />
+		<h2>Ir. Alex Sandria Jaya Wardhana, M.Eng., IPM, ASEAN. Eng</h2>
+		<p class="title">NIP. 19890609 201803 1 001</p>
+		<p class="title">NIDN. 0009068903</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:alexwardhana@uny.ac.id">alexwardhana@uny.ac.id</a>
+        </p> 
+		<div class="a-logo">
+			<a href="https://scholar.google.com/citations?user=haR4L3kAAAAJ&amp;hl=id">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+			</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6705068">
+				<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+			</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57223121486">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+			</a> <a href="https://pddikti.kemdikbud.go.id/detail-dosen/ZNe03I0rQ9f_bhcevoRE22kYIqjvjnaHo9PDjxZ3SsYa5Lsmo7cu0EwBwC0_s_WudlVGhw==">
+				 <img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+				</a>
+		</div>
+	</div>
+	<div class="card">
+		<img alt="Nurman Setiawan, S.T., M.Eng." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Nurman%20Setiawan%20M.Eng..jpg" />
+		<h2>Nurman Setiawan, S.T., M.Eng.</h2>
+		<p class="title">NIP. 19920122 202012 1 008</p>
+		<p class="title">NIDN. 0022019205</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:nurman.setiawan@uny.ac.id">nurman.setiawan@uny.ac.id</a>
+        </p> 
+		<div class="a-logo">
+			<a href="https://scholar.google.com/citations?hl=id&amp;user=DK-OidgAAAAJ">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+			</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6739792">
+				<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+			</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57220698432&amp;origin=recordpage">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+			</a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/9waacy4dJIal7-RJnUv32ClgRe15OFoMN2y65PY-jcrvwI73w9czUAZtSAzHz31ZfKcggQ==">
+				<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a>
+		</div>
+		
+	</div>
+	<div class="card">
+		<img alt="Eko Swi Damarwan, M.Pd." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Eko%20Swi%20Damarwan%2C%20M.Pd%20Depan.jpg" />
+		<h2>Eko Swi Damarwan, M.Pd.</h2>
+		<p class="title">NIP. 19920208 202203 1 007</p>
+		<p class="title">NIDN. 0008029208</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:ekoswie@uny.ac.id">ekoswie@uny.ac.id</a>
+        </p> 
+		<div class="a-logo">
+		<p><a href="https://scholar.google.com/citations?user=A-Fc2e4AAAAJ&amp;hl=id">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+		</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6803351">
+			<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+		</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57222187173">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+		</a> <a href="https://pddikti.kemdikbud.go.id/detail-dosen/YO3LQOx5LOsCvhhvI6I58mJf4MWP3HjSBLzZjXnwqjlL71g3VrwoXhyC5Z_H5pl0N1oKOw==">
+			<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="card">
+		<img alt="Yudi Utomo Putra, M.T." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Yudi%20Utomo%20Putra%2C%20M.T..jpg" />
+		<h2>Yudi Utomo Putra, M.T.</h2>
+		<p class="title">NIP. 19911025 202203 1 006</p>
+		<p class="title">NIDN. 0025109105</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:yudiutomoputra@uny.ac.id">yudiutomoputra@uny.ac.id</a>
+        </p>
+		<div class="a-logo"> 
+		<p><a href="https://scholar.google.com/citations?hl=id&amp;user=Cc-dDCsAAAAJ">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+		</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6803051">
+			<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+		</a> <a href="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+		</a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/dOJV8cAC75Xjtb9Tz9o0FAY8xDwuNS_o4-s3nD4JSBUI_i9iHD1ZP8OKGODnzynlt6JGAQ==">
+			<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a></p>
+		</div>
+	</div>
+	<div class="card">
+		<img alt="Vando Gusti Al Hakim, S.Pd., M.Sc." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Vando%20Gusti%20Al%20Hakim%2C%20S.Pd.%2C%20M.Sc.%20.jpg" />
+		<h2>Vando Gusti Al Hakim, S.Pd., M.Sc.</h2>
+		<p class="title">NIP. 19960829 202321 1 004</p>
+		<p class="title">NIDN. -</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:vandogustialhakim@uny.ac.id">vandogustialhakim@uny.ac.id</a>
+        </p>
+		<div class="a-logo">
+		<p><a href="https://scholar.google.com/citations?user=_xfMSO0AAAAJ&amp;hl=id&amp;oi=ao">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+		</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6862710">
+			<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+		</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57219052913">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+		</a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/qHl8dIpm88le8x426PsO4NnQIXroRWeziQV1TQR4T234wmvUbeJo8YQP2ea1NxrOC3sOaw==">
+			<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a>
+		</div>
+	</div>
+	<div class="card">
+		<img alt="Dwinugroho Putro Utomo, S.T., M.T." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dwi%20Nugroho%20Putro%20Utomo%20M.T..jpg" />
+		<h2>Dwinugroho Putro Utomo, S.T., M.T.</h2>
+		<p class="title">NIP. 19950518 202406 1 004</p>
+		<p class="title">NIDN. -</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:dwinugrohoputroutomo@uny.ac.id">dwinugrohoputroutomo@uny.ac.id</a>
+        </p>
+		<div class="a-logo">
+		<p><a href="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+		</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6932395">
+			<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+		</a> <a href="">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+		</a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/zgT82QjRPx9GFozG8O8xtGa1Z6UpXYxjI06Asv2E5YBIA6IKEjKoNpFVbf80XpjCdliyMg==">
+			<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a>
+		</div>
+	</div>
+	<div class="card">
+		<img alt="Rizal Priyambudi, S.Tr.T., M.T." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Rizal%20Priyambudi%2C%20M.T..jpg" />
+		<h2>Rizal Priyambudi, S.Tr.T., M.T.</h2>
+		<p class="title">NIP. 19970217 202406 1 001</p>
+		<p class="title">NIDN. -</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:rizalpriyambudi@uny.ac.id">rizalpriyambudi@uny.ac.id</a>
+        </p>
+		<div class="a-logo">
+		<p><a href="https://scholar.google.com/citations?user=H3Ib68YAAAAJ&amp;hl=id&amp;oi=ao">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+		</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6861449">
+			<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+		</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=58799885700">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+		</a> <a href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/MNIOYyGEjAqVWTXh-kQIAJeydgFu49nhyfjpabad8f2UXAp1zcIPH_cELAncWQV0HQMx9w==">
+			<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/>
+		</a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="card">
+		<img alt="Dr. Arif Nugroho, S.Pd." src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dr.%20Arif%20Nurgoho%20M.T..jpg" />
+		<h2>Dr. Arif Nugroho, S.Pd.</h2>
+		<p class="title">NIP. 19930527 202410 1 001</p>
+		<p class="title">NIDN. -</p>
+        <p>
+            <i class="fa fa-envelope-o" aria-hidden="true"></i> 
+            <a href="mailto:arifnugroho@uny.ac.id">arifnugroho@uny.ac.id</a>
+        </p>
+
+		<div class="a-logo">
+			<p><a href="https://scholar.google.com/citations?user=48_H5TgAAAAJ&amp;hl=id&amp;oi=sra">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" class="img-logo"/>
+			</a> <a href="https://sinta.kemdikbud.go.id/authors/profile/6934312">
+				<img src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" class="img-logo"/>
+			</a> <a href="https://www.scopus.com/authid/detail.uri?authorId=57214085660">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" class="img-logo"/>
+			</a> <a href="">
+				<img src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" class="img-logo"/></a>
+		</div>
+	</div>
+	
+</div>

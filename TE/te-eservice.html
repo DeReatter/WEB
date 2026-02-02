@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f4f6fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: rgb(255, 100, 2);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background-color: #f9f9ff;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        transition: transform 0.2s ease, background 0.3s ease;
+        min-height: 250px; 
+    }
+
+    .card:hover {
+        transform: scale(1.03);
+        background-color: #e6f0ff;
+    }
+
+    .card-header {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        gap: 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #003366;
+        margin-bottom: 10px;
+    }
+
+    .card-header img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .card p {
+        font-size: 0.95em;
+        color: #555;
+        margin: 0 0 15px;
+    }
+
+    .eservice-btn {
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+        background: linear-gradient(135deg, rgb(255, 100, 2), rgb(248, 142, 75));
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+        transition: background 0.3s ease, transform 0.2s ease;
+        margin-top: auto;
+        position: bottom-left;
+    }
+
+    .btn:hover {
+        background: linear-gradient(135deg, rgb(255, 100, 2), rgb(248, 142, 75));
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <h2 class="heading">E-Service</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem informasi penerimaan mahasiswa baru (SiPMB)</span>
+            </div>
+            <p>Seleksi mahasiswa baru, Penentuan calon MABA diterima.</p>
+            <a href="http://pmb.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Registrasi</span>
+            </div>
+            <p>Pengelolaan data mahasiswa dan status studi.</p>
+            <a href="https://registrasi.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Akademik (SIAKAD)</span>
+            </div>
+            <p>Pengelolaan data kurikulum, KRS, dan Nilai.</p>
+            <a href="https://siakad.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Yudisium dan Wisuda Online</span>
+            </div>
+            <p>Mengelola layanan yudisium dan wisuda, Cetak transkrip Nilai, Ijazah, Akta mengajar, dan SKPI.</p>
+            <a href="http://yudiwis.uny.ac.id/site/login" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Perpustakaan Terpadu</span>
+            </div>
+            <p>Mengelola data koleksi buku/pustaka, sirkulasi buku/pustaka.</p>
+            <a href="https://library.uny.ac.id/sirkulasi/index.php" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Monitoring dan Evaluasi Perkuliahan (E-monev)</span>
+            </div>
+            <p>Mengelola data monev PBM.</p>
+            <a href="https://survey.uny.ac.id/emonev-pbm" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Pro-Tefl</span>
+            </div>
+            <p>Mengelola data ujian Bahasa inggris (Pro TEFL).</p>
+            <a href="https://ulb.uny.ac.id/ProTEFL_p2b" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Be-Smart</span>
+            </div>
+            <p>MLayanan PBM online (daring).</p>
+            <a href="http://besmart.uny.ac.id/v2/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>E-Service</span>
+            </div>
+            <p>Pengajuan dan pemantauan layanan akademik secara online.</p>
+            <a href="https://eservice.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>E-Bimbingan</span>
+            </div>
+            <p>Bimbingan tugas akhir online dan pengelolaan dosen pembimbing.</p>
+            <a href="https://bimbingan.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Akreditasi</span>
+            </div>
+            <p>Menyajikan data dukung untuk keperluan akreditasi prodi dan institusi.</p>
+            <a href="http://akreditasi.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Alumni (Simfoni)</span>
+            </div>
+            <p>Layanan alumni.</p>
+            <a href="http://simfoni.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Prestasi Mahasiswa</span>
+            </div>
+            <p>Pengelolaan dan statistik prestasi mahasiswa untuk SKPI..</p>
+            <a href="http://presma.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem PKM dan Beasiswa</span>
+            </div>
+            <p>Mengelola data beasiswa dan PKM.</p>
+            <a href="http://kemahasiswaan.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Legalisasi Online</span>
+            </div>
+            <p>Legalisasi ijazah online untuk alumni tanpa perlu datang ke kampus.</p>
+            <a href="https://eservice.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Website UNY</span>
+            </div>
+            <p>Sistem informasi berbasis web.</p>
+            <a href="https://www.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Sarana dan Prasarana (SINAPRA)</span>
+            </div>
+            <p>Mengelola data sarana dan prasarana (Gedung,Ruang).</p>
+            <a href="http://sinapra.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Administrasi Pegawai (SIAP)</span>
+            </div>
+            <p>Data induk kepegawaian.</p>
+            <a href="http://siap.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Sistem Informasi Persuratan dan Kearsipan (MyOffice)</span>
+            </div>
+            <p>Layanan persuratan online.</p>
+            <a href="http://myoffice.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Jadwal Rapat Pimpinan</span>
+            </div>
+            <p>Mengelola penjadwalan rapat dan penggunaan ruang rapat.</p>
+            <a href="https://siagen.uny.ac.id/site/login" class="eservice-btn">Website</a>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="https://cdn-icons-png.flaticon.com/512/747/747376.png" alt="icon">
+                <span>Publikasi UNY</span>
+            </div>
+            <p>Menyajikan panduan, prosedur, dan pengelolaan insentif publikasi dosen uny.</p>
+            <a href="https://publikasi.uny.ac.id/" class="eservice-btn">Website</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

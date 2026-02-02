@@ -1,0 +1,115 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .unduhan-wrapper {
+      max-width: 700px;
+      margin: 40px auto;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .unduhan-heading {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #003366;
+    }
+
+    .unduhan-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .unduhan-table tr {
+      transition: background 0.3s ease;
+    }
+
+    .unduhan-table td {
+      padding: 16px 20px;
+      background-color: #f9f9ff;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .unduhan-table td:first-child {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .unduhan-table td:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .unduhan-table tr:hover td {
+      background-color: #e6f0ff;
+    }
+
+    .download-btn {
+        display: inline-block;
+        width: 140px;
+        text-align: center;
+        background: linear-gradient(135deg, rgb(255, 100, 2), rgb(248, 142, 75));
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+        transition: background 0.3s ease, transform 0.2s ease;
+        margin-top: auto;
+        position: bottom-left;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(135deg, #004999, #006de0);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="unduhan-wrapper">
+    <h2 class="unduhan-heading">Daftar Unduhan</h2>
+    <table class="unduhan-table">
+      <thead>
+        <tr>
+          <th>Dokumen</th>
+          <th>Unduh</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peraturan Akademik 2025</td>
+          <td><a class="download-btn" 
+            href="https://www.bing.com/ck/a?!&&p=c839c5ec1606e9ca801bd5f20d491919cc58d9ae25566efc7a7049e02fcffe95JmltdHM9MTc2ODg2NzIwMA&ptn=3&ver=2&hsh=4&fclid=220a0518-0fd3-6748-2c70-131a0e966689&psq=peraturan+akademik+2025&u=a1aHR0cHM6Ly93d3cudW55LmFjLmlkL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNi0wMS9QZXJhdHVyYW4lMjBBa2FkZW1payUyMDIwMjUucGRm">Buka</a></td>
+        </tr>
+        <tr>
+          <td>Panduan Praktik Industri</td>
+          <td><a class="download-btn" 
+            href="#">Buka</a></td>
+        </tr>
+        <tr>
+          <td>Panduan KKN</td>
+          <td><a class="download-btn" 
+            href="https://drive.google.com/file/d/1WgfX--wZb9NkpG0kI-PwlqakYcqOIuei/view?usp=sharing">Buka</a></td>
+        </tr>
+        <tr>
+          <td>Panduan Skripsi</td>
+          <td><a class="download-btn" 
+            href="#">Buka</a></td>
+        </tr>
+        <tr>
+          <td>SK Akreditasi</td>
+          <td><a class="download-btn" 
+            href="http://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/SK%20Akreditasi%20Teknik%20Elektro%20S1%202020-2025.pdf">Buka</a></td>
+      </tbody>
+    </table>
+  </div>
+</body>

@@ -1,0 +1,707 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<style type="text/css">
+	@import url("https://themewagon.github.io/solartec/css/bootstrap.min.css");
+
+	body {
+		font-family: Arial, sans-serif;
+		background-color: #f4f4f9;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: rgb(255, 100, 2);
+	}
+
+	h1 {
+		text-align: center;
+		color: #000000;
+		padding: 20px;
+		margin: 0;
+	}
+
+	@media (max-width: 640px) {
+		#header .top_left #logo img {
+			width: -webkit-fill-available;
+		}
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.card {
+		background-color: #ffffff;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		border-radius: 8px;
+		overflow: hidden;
+		width: calc(20% - 30px);
+		margin: 15px;
+		transition: transform 0.3s;
+		text-align: center;
+		align-items: center;
+		padding: 15px;
+		display: flex;
+		flex-direction: column;
+		min-height: 375px;
+		/* Atur tinggi minimal yang sesuai */
+		line-height: 1.25;
+	}
+
+	.social-media {
+		margin-top: auto;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+	}
+
+	.card img {
+		width: 160px;
+		height: 200px;
+		border-radius: 5px;
+		object-fit: cover;
+		margin-bottom: 10px;
+	}
+
+	.card h2 {
+		font-size: 16px;
+		color: #333;
+		margin: 5px 0;
+	}
+
+	.card .title,
+	.team-data .title {
+		color: grey;
+		font-size: 12px;
+		margin: 2px 0;
+	}
+
+	.card p,
+	.team-data p {
+		font-size: 12px;
+		margin: 2px 0;
+	}
+
+	.card a {
+		text-decoration: none;
+		color: #031684;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.card a:hover {
+		color: #555;
+	}
+
+	.social-icons a {
+		margin: 0 3px;
+		color: #031684;
+		font-size: 12px;
+	}
+
+	.social-icons a:hover {
+		color: #555;
+	}
+
+	/* Responsif untuk Tablet */
+	@media (max-width: 1024px) {
+		.card {
+			width: calc(33.33% - 30px);
+			/* 3 card dalam satu baris pada tablet */
+		}
+	}
+
+	/* Responsif untuk Smartphone */
+	@media (max-width: 600px) {
+		.card {
+			width: 90%;
+			/* 1 card per baris pada mobile */
+		}
+	}
+
+	.social-media {
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+		padding: 10px 0;
+	}
+
+	.social-link {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		background: #f5f7fe;
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+		margin-top: 1rem;
+	}
+
+	.social-link:hover {
+		background: #6e8efb;
+		transform: translateY(-3px);
+	}
+
+	.social-link:hover::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 50%;
+		animation: ripple 0.6s linear;
+	}
+
+	.social-icon {
+		width: 30px !important;
+		height: 30px !important;
+		object-fit: contain !important;
+		margin: 0 !important;
+	}
+
+	/* .team-card {
+    min-height: 375px; 
+	line-height: 1.25;
+    } */
+	.team-item {
+		box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+	}
+
+	.team-item .img-fluid {
+		border-radius: 8px 60px 0 0;
+	}
+
+	.team-item .team-social {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		background: #FFFFFF;
+		transition: .5s;
+	}
+
+	.team-data {
+		background-color: #ffffff;
+		min-height: 180px;
+		/* Atur tinggi minimal yang sesuai */
+		line-height: 1.25;
+	}
+
+	.team-data a {
+		text-decoration: none;
+		color: #ff6402;
+		font-weight: bold;
+		font-size: 12px;
+	}
+
+	.team-item .d-flex {
+		background-color: #ffffff;
+	}
+</style>
+<div class="container-xxl py-5">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" />
+						<div class="team-social w-25"><a class="social-link "
+								href="https://scholar.google.com/citations?hl=id&amp;user=1tAoP3MAAAAJ"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6029804"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=35434463300&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/yhZNlFt0BgfRIju-Vq5FmznAzPZ9XkP4ZsKXfD4psgUc9zNPLwM-zF1xGCXX-I-KxuUU6Q==">
+								<img alt="PD DIKTI" class="social-icon"
+									src="https://pddikti.kemdiktisaintek.go.id/static/media/logo-pddikti.079f9b910c956907fa49f7fabaef609a.svg" />
+							</a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Ir. Rustam Asnawi, S.T., M.T., Ph.D.</h5>
+						<p class="title">NIP. 19720127 199702 1 001</p>
+						<p class="title">NIDN. 0027017205</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:rustam@uny.ac.id">rustam@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Sigit%20Yatmono%2C%20%20S.T.%2C%20M.T.%20Depan.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=XN5AYz0AAAAJ&amp;hl=id&amp;oi=ao"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/5975817"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57209469527&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/9KTrHJACaA4CivxHoCNHX7TRLEwJU_HFRi7YmjnAWpR11q5OH1ZQlKYu8yRk5XKQcRdwtA==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Sigit Yatmono, S.T., M.T.</h5>
+						<p class="title">NIP. 19730125 199903 1 001</p>
+						<p class="title">NIDN. 0025017301</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:s_yatmono@uny.ac.id">s_yatmono@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Moh.%20Khairudin%2C%20Ph.D%20Depan.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=qau4BuwAAAAJ&amp;hl=id&amp;oi=ao"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/5990720"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=37361115800&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/MuhXnzxBh-13sO9ZutRtQC9eD52cDKYEGd1XL7flPlzL7f1kw7nRp_5T2wKdQyLTkiJW7g==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Prof. Ir. Moh. Khairudin, S.Pd., S.T., M.T., Ph.D.</h5>
+						<p class="title">NIP. 19790412 200212 1 002</p>
+						<p class="title">NIDN. 0012047901</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> -
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dr.%20Eng.%20Ir.%20Aji%20Ery%20Burhandenny%20M.AIT..jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=FrLB9SEAAAAJ "><img alt="Google Scholar"
+									class="social-icon" src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg"
+									width="10px" /></a> <a class="social-link"
+								href="https://sinta.kemdikbud.go.id/authors/profile/5999387"> <img alt="Sinta"
+									class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57194047895"> <img
+									alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/G3_QG_CZ1d7Muaqxy9rXnIeNuiKoKJ4eHsoSDxRtphnHEPOv3Tcv4-f3S3EquLL49c9Gdg==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dr. Eng. Aji Ery Burhandenny, S.T., M.AIT.</h5>
+						<p class="title">NIP. 19810317 200501 1 001</p>
+						<p class="title">NIDN. 0017038101</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:ajieryburhandenny@uny.ac.id">ajieryburhandenny@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dr.%20Eng.%20Sarwo%20Pranoto%2C%20S.T.%2C%20M.Eng.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=Y_1ZD5kAAAAJ&amp;hl=id&amp;oi=ao"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6659421"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57190937725&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/_DEGfi7JXZSlIGmxGTUgkA6L-SeJlmhRsTqIDh4KL1AIP1izDEdxxAuNOPq-G04Wf4cyxg==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dr. Eng. Sarwo Pranoto, S.T., M.Eng.</h5>
+						<p class="title">NIP. 19800620 200501 1 005</p>
+						<p class="title">NIDN. 0020068004</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:sarwopranoto@uny.ac.id">sarwopranoto@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ariadie%20Chandra%20Nugraha%2C%20S.T.%2C%20M.T.Depan.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=3TIaGmAAAAAJ&amp;hl=id&amp;oi=ao"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/5983013"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57203836399&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/RcrPV6qVZ8qvB6r10V6PCSZ7eY8iGGzWNDZH40g5cp0U5TS6Z2ckLJx3SmdPpsOcc18L3A==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Ariadie Chandra Nugraha, S.T., M.T.</h5>
+						<p class="title">NIP. 19770913 200501 1 002</p>
+						<p class="title">NIDN. 0013097702</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:ariadie@uny.ac.id">ariadie@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://pendidikan-teknik-mekatronika.ft.uny.ac.id/sites/pendidikan-teknik-mekatronika.ft.uny.ac.id/files/DBH.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=xQNvYcgAAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6022998">
+								<img alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57223121486&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdikbud.go.id/detail-dosen/ZNe03I0rQ9f_bhcevoRE22kYIqjvjnaHo9PDjxZ3SsYa5Lsmo7cu0EwBwC0_s_WudlVGhw==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Deny Budi Hertanto S.Si., M.Kom.</h5>
+						<p class="title">NIP. 19770511 200604 1 002</p>
+						<p class="title">NIDN. -</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:denybudi@uny.ac.id">denybudi@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Nurman%20Setiawan%20M.Eng..jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=DK-OidgAAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6739792"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57220698432&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/9waacy4dJIal7-RJnUv32ClgRe15OFoMN2y65PY-jcrvwI73w9czUAZtSAzHz31ZfKcggQ==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Nurman Setiawan, S.T., M.Eng.</h5>
+						<p class="title">NIP. 19920122 202012 1 008</p>
+						<p class="title">NIDN. 0022019205</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:nurman.setiawan@uny.ac.id">nurman.setiawan@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Yudi%20Utomo%20Putra%2C%20M.T..jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=Cc-dDCsAAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6803051"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57222187173&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/dOJV8cAC75Xjtb9Tz9o0FAY8xDwuNS_o4-s3nD4JSBUI_i9iHD1ZP8OKGODnzynlt6JGAQ==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Yudi Utomo Putra, M.T.</h5>
+						<p class="title">NIP. 19911025 202203 1 006</p>
+						<p class="title">NIDN. 0025109105</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:yudiutomoputra@uny.ac.id">yudiutomoputra@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Vando%20Gusti%20Al%20Hakim%2C%20S.Pd.%2C%20M.Sc.%20.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=_xfMSO0AAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6862710"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57219052913&amp;origin=recordpage">
+								<img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/qHl8dIpm88le8x426PsO4NnQIXroRWeziQV1TQR4T234wmvUbeJo8YQP2ea1NxrOC3sOaw==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Vando Gusti Al Hakim, M.Sc. Ph. D</h5>
+						<p class="title">NIP. 19960829 202321 1 004</p>
+						<p class="title">NUPTK. 2161774675130163&nbsp;</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:vandogustialhakim@uny.ac.id">vandogustialhakim@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dwi%20Nugroho%20Putro%20Utomo%20M.T..jpg" />
+						<div class="team-social w-25"><a class="social-link" href="#"><img alt="Google Scholar"
+									class="social-icon" src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg"
+									width="10px" /> </a> <a class="social-link"
+								href="https://sinta.kemdikbud.go.id/authors/profile/6932395"> <img alt="Sinta"
+									class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link" href="#"> <img alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/zgT82QjRPx9GFozG8O8xtGa1Z6UpXYxjI06Asv2E5YBIA6IKEjKoNpFVbf80XpjCdliyMg==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dwinugroho Putro Utomo, S.T., M.T.</h5>
+						<p class="title">NIP. 19950518 202406 1 004</p>
+						<p class="title">NUPTK. 5850773674130302</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:dwinugrohoputroutomo@uny.ac.id">dwinugrohoputroutomo@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+						<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Rizal%20Priyambudi%2C%20M.T..jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=H3Ib68YAAAAJ&amp;hl=id&amp;oi=ao"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6861449"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=58799885700"> <img
+									alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link"
+								href="https://pddikti.kemdiktisaintek.go.id/detail-dosen/MNIOYyGEjAqVWTXh-kQIAJeydgFu49nhyfjpabad8f2UXAp1zcIPH_cELAncWQV0HQMx9w==">
+								<img alt="PD DIKTI" class="social-icon" id="pddikti" src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Rizal Priyambudi, S.Tr.T., M.T.</h5>
+						<p class="title">NIP. 19970217 202406 1 001</p>
+						<p class="title">NIDN. -</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:rizalpriyambudi@uny.ac.id">rizalpriyambudi@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row g-4 w-100 justify-content-center">
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://teknik-elektro-s1.ft.uny.ac.id/sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Dr.%20Arif%20Nurgoho%20M.T..jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=48_H5TgAAAAJ&amp;hl=id&amp;oi=sra"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdikbud.go.id/authors/profile/6934312"> <img
+									alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57214085660"> <img
+									alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link" href="#"> <img alt="PD DIKTI" class="social-icon" id="pddikti"
+									src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dr. Arif Nugroho</h5>
+						<p class="title">NIP. 19930527 202410 1 001</p>
+						<p class="title">NIDN. -</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:arifnugroho@uny.ac.id">arifnugroho@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75 crop-fix"
+							src="https://pendidikan-teknik-elektronika.ft.uny.ac.id/sites/pendidikan-teknik-elektronika.ft.uny.ac.id/files/fatchul_2024.png" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=v5AYUpwAAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdiktisaintek.go.id/authors/profile/6023165">
+								<img alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57214085660"> <img
+									alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link" href="#"> <img alt="PD DIKTI" class="social-icon" id="pddikti"
+									src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dr. Ir. Fatchul Arifin, M.T.</h5>
+						<p class="title">NIP. 19720508 199802 1 002</p>
+						<p class="title">NIDN. -</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:fatchul@uny.ac.id">fatchul@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 fadeInUp"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+				<div class="team-item rounded overflow-hidden">
+					<div class="d-flex"><img alt="" class="img-fluid w-75"
+							src="https://pendidikan-teknik-mekatronika.ft.uny.ac.id/sites/pendidikan-teknik-mekatronika.ft.uny.ac.id/files/ALI.jpg" />
+						<div class="team-social w-25"><a class="social-link"
+								href="https://scholar.google.com/citations?user=T0nTq8IAAAAJ&amp;hl=id"><img
+									alt="Google Scholar" class="social-icon"
+									src="https://cdn.worldvectorlogo.com/logos/google-scholar.svg" width="10px" /> </a>
+							<a class="social-link" href="https://sinta.kemdiktisaintek.go.id/authors/profile/5975830">
+								<img alt="Sinta" class="social-icon"
+									src="https://sinta.kemdikbud.go.id/public/assets/img/brand_sinta.png" /> </a> <a
+								class="social-link"
+								href="https://www.scopus.com/authid/detail.uri?authorId=57214085660"> <img
+									alt="Scopus Elsevier" class="social-icon"
+									src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Elsevier.svg" /> </a> <a
+								class="social-link" href="#"> <img alt="PD DIKTI" class="social-icon" id="pddikti"
+									src="" /> </a></div>
+					</div>
+					<div class="team-data p-4">
+						<h5>Dr. phil. Ir. Muhamad Ali M.T., IPU., ASEAN Eng.</h5>
+						<p class="title">NIP. 19741127 200003 1 005</p>
+						<p class="title">NIDN. -</p>
+						<p>
+							<icon class="fa fa-envelope-o fa-lg"></icon> <a
+								href="mailto:muhal@uny.ac.id">muhal@uny.ac.id</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+  function normalizePhoto(selector, targetHeight = 220) {
+    const images = document.querySelectorAll(selector);
+    images.forEach(img => {
+      img.style.width = '100%';
+      img.style.height = targetHeight + 'px';
+      img.style.objectFit = 'cover';
+      img.style.objectPosition = 'center top';
+      img.style.display = 'block';
+    });
+  }
+  // Panggil hanya untuk foto yang bermasalah
+
+  normalizePhoto('.crop-fix', 220);
+	const nodeList = document.querySelectorAll("#pddikti");
+	for (let i = 0; i < nodeList.length; i++) {
+		nodeList[i].src = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1MyA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuMjkyMzggNDEuODg3NUg2LjI1ODgyQzQuODgyODkgNDEuODg3NSAzLjY5MTUzIDQyLjcxNDMgMy4xODgxNCA0My45MTI0QzEuMTkxMzYgNDIuMjQxOSAwIDM5Ljc2MTMgMCAzNy4xMTIxVjE4Ljg4NzhDMCAxNS43MTU0IDEuNjk0NzUgMTIuNzc5MyA0LjQ2MzQgMTEuMjFMMjAuMzIwMiAyLjA5Nzg0QzIzLjA3MjEgMC41MTE2NTcgMjYuNDYxNiAwLjUxMTY1NyAyOS4yMzAyIDIuMDk3ODRMNDEuMDQzMSA4Ljg4MTMyQzQxLjYzMDQgNy44ODU3NCA0Mi43MDQzIDcuMjEwNzYgNDMuOTI5MiA3LjIxMDc2QzQ0LjE4MDkgNy4yMTA3NiA0NC40MTU4IDcuMjQ0NTEgNDQuNjM0IDcuMjk1MTNMNDkuMzMyMyA0LjE1NjUxTDUyLjQzNjUgNS45NDUxOUw0Ny4xMDA2IDkuNTA1NjdDNDcuMjE4IDkuODQzMTYgNDcuMjg1MiAxMC4xOTc1IDQ3LjI4NTIgMTAuNTY4OEM0Ny4yODUyIDExLjIxIDQ3LjEwMDYgMTEuODAwNiA0Ni43ODE4IDEyLjMwNjhDNDYuNDk2NSAxMi4wODc0IDQ2LjIxMTMgMTEuODY4MSA0NS44OTI0IDExLjY5OTNMNDUuMzU1NSAxMS4zOTU2QzQ1LjM4OTEgMTEuNDEyNSA0NS40MjI2IDExLjQyOTMgNDUuNDM5NCAxMS40NDYyTDQxLjAwOTYgOC44OTgyQzQwLjcyNDMgOS4zODc1NSA0MC41Mzk3IDkuOTYxMjggNDAuNTM5NyAxMC41Njg4QzQwLjUzOTcgMTEuMjI2OSA0MC43NDExIDExLjgxNzUgNDEuMDU5OSAxMi4zNDA2TDM0LjQ2NTUgMjUuODczOEMzNC4yOTc3IDI1Ljg1NjkgMzQuMTI5OSAyNS44MjMxIDMzLjk2MjEgMjUuODIzMUMzMi42NzAxIDI1LjgyMzEgMzEuNTYyNiAyNi41NDg3IDMwLjk5MjEgMjcuNjI4N0wxOS4zODA1IDI1LjUwMjVDMTguODkzOSAyNC4yNTM4IDE3LjY4NTggMjMuMzU5NSAxNi4yNTk1IDIzLjM1OTVDMTQuMzk3IDIzLjM1OTUgMTIuOTAzNiAyNC44NjEzIDEyLjkwMzYgMjYuNzAwNkMxMi45MDM2IDI3LjEyMjUgMTIuOTg3NSAyNy41Mjc0IDEzLjEyMTcgMjcuODgxOEw2LjI5MjM4IDQxLjg4NzVaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfNjc3XzE1ODgzKSIvPgo8cGF0aCBkPSJNNDMuODk1NSAxMy45MjY2QzQ1LjA3MDEgMTMuOTI2NiA0Ni4wNzY5IDEzLjMzNiA0Ni42ODEgMTIuNDI0OEM0OC40NTk2IDE0LjA3ODUgNDkuNSAxNi40MDcxIDQ5LjUgMTguODg3N1YzNy4xMTE5QzQ5LjUgNDAuMjg0MyA0Ny44MDUyIDQzLjIwMzYgNDUuMDM2NiA0NC43ODk4TDI5LjE3OTggNTMuOTAxOUMyNi40Mjc5IDU1LjQ4ODEgMjMuMDM4NCA1NS40ODgxIDIwLjI2OTcgNTMuOTAxOUw4Ljg0Mjc3IDQ3LjMzNzhDOS4zMTI2IDQ2Ljc2NCA5LjU5Nzg2IDQ2LjAzODUgOS41OTc4NiA0NS4yNDU0QzkuNTk3ODYgNDQuNTg3MyA5LjM5NjUgNDMuOTc5OCA5LjA3NzY5IDQzLjQ3MzZMMTUuNjM4NSAzMC4wMjQ3QzE1LjgyMzEgMzAuMDU4NSAxNi4wMjQ1IDMwLjA5MjIgMTYuMjI1OCAzMC4wOTIyQzE3LjM1MDEgMzAuMDkyMiAxOC4zMjMzIDI5LjU1MjIgMTguOTI3NCAyOC43MDg1TDMxLjA0MjMgMzAuOTE5MUMzMS42Mjk2IDMxLjg4MDkgMzIuNjg2NyAzMi41MzkgMzMuOTExNiAzMi41MzlDMzUuNzc0MiAzMi41MzkgMzcuMjY3NiAzMS4wMzcyIDM3LjI2NzYgMjkuMTk3OUMzNy4yNjc2IDI4Ljc0MjMgMzcuMTY2OSAyOC4zMDM1IDM3LjAxNTkgMjcuOTE1NEw0My44Mjg0IDEzLjkyNjZINDMuODk1NVoiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcl82NzdfMTU4ODMpIi8+CjxwYXRoIGQ9Ik0yLjg4NjIzIDQ1LjI0NTVDMi44ODYyMyA0NC44MDY4IDIuOTcwMTMgNDQuNDAxOCAzLjEyMTE1IDQ0LjAxMzdDMy4xNzE0OSA0NC4wNDc0IDMuMjA1MDQgNDQuMDgxMiAzLjI1NTM4IDQ0LjA5OEMzLjM3Mjg0IDQ0LjE4MjQgMy40NzM1MiA0NC4yNDk5IDMuNTkwOTggNDQuMzE3NEw4Ljg0MzAyIDQ3LjMzNzlDOC4yMjIxNyA0OC4wOTczIDcuMjk5MjkgNDguNTg2NiA2LjI0MjE3IDQ4LjU4NjZDNC4zOTY0IDQ4LjYwMzUgMi44ODYyMyA0Ny4xMDE3IDIuODg2MjMgNDUuMjQ1NVoiIGZpbGw9InVybCgjcGFpbnQyX2xpbmVhcl82NzdfMTU4ODMpIi8+CjxwYXRoIGQ9Ik0zLjE3MTQzIDQzLjkxMTRDMy4xNTQ2NSA0My45NDUxIDMuMTM3ODcgNDMuOTc4OSAzLjEyMTA5IDQ0LjAxMjZDMy4yNzIxMSA0NC4xMTM5IDMuNDIzMTMgNDQuMjMyIDMuNTkwOTIgNDQuMzE2NEw4Ljg0Mjk3IDQ3LjMzNjlDOC44NDI5NyA0Ny4zMzY5IDguODQyOTcgNDcuMzM2OSA4Ljg0Mjk3IDQ3LjMyTDQuNDQ2NjkgNDQuNzg4OEMzLjk5MzY0IDQ0LjUzNTcgMy41NzQxNSA0NC4yMzIgMy4xNzE0MyA0My45MTE0WiIgZmlsbD0idXJsKCNwYWludDNfbGluZWFyXzY3N18xNTg4MykiLz4KPHBhdGggZD0iTTQ2Ljc0OCAxMi4zMjNDNDYuNDYyNyAxMi4xMDM2IDQ2LjE3NzQgMTEuODg0MyA0NS44NTg2IDExLjcxNTVMNDUuNDIyNCAxMS40NjI0QzQ1Ljg3NTQgMTEuNzQ5MyA0Ni4yOTQ5IDEyLjA2OTkgNDYuNjgwOCAxMi40NDExQzQ2LjcxNDQgMTIuMzkwNSA0Ni43MzEyIDEyLjM1NjcgNDYuNzQ4IDEyLjMyM1oiIGZpbGw9InVybCgjcGFpbnQ0X2xpbmVhcl82NzdfMTU4ODMpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfNjc3XzE1ODgzIiB4MT0iMjYuMTk5NCIgeTE9IjkuNDI3NTgiIHgyPSIyNi4xOTk0IiB5Mj0iNDguNTk2OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjQjgyMUZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQwMDBDNyIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXJfNjc3XzE1ODgzIiB4MT0iMjkuMTg1OSIgeTE9IjkuNDI3NDUiIHgyPSIyOS4xODU5IiB5Mj0iNDguNTk2OCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjQjgyMUZGIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzQwMDBDNyIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50Ml9saW5lYXJfNjc3XzE1ODgzIiB4MT0iNS44NzA0MSIgeTE9IjkuNDI3NiIgeDI9IjUuODcwNDEiIHkyPSI0OC41OTY5IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNCODIxRkYiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDAwMEM3Ii8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQzX2xpbmVhcl82NzdfMTU4ODMiIHgxPSI1Ljk5ODgxIiB5MT0iNDMuOTExIiB4Mj0iNS45OTg4MSIgeTI9IjQ3LjM0NzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0I4MjFGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0MDAwQzciLz4KPC9saW5lYXJHcmFkaWVudD4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDRfbGluZWFyXzY3N18xNTg4MyIgeDE9IjQ2LjA5NzYiIHkxPSIxMS40NTE2IiB4Mj0iNDYuMDk3NiIgeTI9IjEyLjQyNzEiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0I4MjFGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM0MDAwQzciLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K";
+	}
+</script>

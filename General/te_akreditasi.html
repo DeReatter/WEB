@@ -1,0 +1,84 @@
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+    body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* Tabel full width dan responsif */
+    .akreditasi-table {
+        width: 100%;
+        max-width: 100%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        background: #fff;
+    }
+
+    .akreditasi-table td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .akreditasi-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .kurikulum-table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .download-btn {
+        display: inline-block;
+        padding: 8px 12px;
+        background-color: #2196F3;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+        background-color: #0b7dda;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    /* Media Queries untuk tampilan tablet dan HP */
+    @media (max-width: 768px) {
+        .akreditasi-table td {
+            padding: 10px;
+        }
+
+        body {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .akreditasi-table td {
+            font-size: 14px;
+        }
+    }
+</style>
+<table class="akreditasi-table">
+    <tbody>
+        <tr>
+            <td>Akreditasi Prodi Pendidikan Teknik Elektro (1 November 2020 - 1 November 2025)</td>
+            <td><a class="download-btn"
+                    href="/sites/ptelektro.ft.uny.ac.id/files/Sertifikat%20Pendidikan%20Teknik%20Elektro%20S-1.pdf">Download</a>
+            </td>
+        </tr>
+        <tr>
+            <td>SK Akreditasi prodi S1 Pendidikan Teknik Elektro 2025-2030.</td>
+            <td><a class="download-btn" href="">Download</a></td>
+        </tr>
+    </tbody>
+</table>

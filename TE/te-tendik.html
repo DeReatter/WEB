@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenaga Kependidikan Program Studi Teknik Elektro UNY</title>
+    <!-- Import Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #000;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;        /* pusatkan secara horizontal */
+            justify-content: center;    
+            padding: 30px;
+            gap: 30px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;        /* konten dalam kartu di tengah vertikal */
+            justify-content: center;
+            width: 90%;
+            max-width: 1000px;
+            padding: 24px;
+            border-radius: 16px;
+            background: white;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.01);
+        }
+
+        .card img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-right: 24px;
+        }
+
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* vertikal: konten di tengah */
+            align-items: flex-start; /* horizontal: konten rata kiri (bisa jadi center jika mau rata tengah) */
+            height: 100%;
+        }
+
+        .card-content h2 {
+            font-size: 22px;
+            margin: 0 0 10px;
+        }
+
+        .card-content .title {
+            margin-bottom: 10px;
+            color: grey;
+            font-size: 15px;
+        }
+
+        .card-content p {
+            font-size: 12px;
+            margin: 0 0 8px;
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #031684;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .card-content a:hover {
+            color: #555;
+        }
+
+        /* Tablet: 1 kartu per baris */
+        @media (max-width: 1024px) {
+            .card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .card img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            .card-content {
+                align-items: center;
+            }
+        }
+
+        /* Mobile: 1 kartu per baris */
+        @media (max-width: 600px) {
+            .card {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .card img {
+                width: 140px;
+                height: 140px;
+            }
+
+            .card-content h2 {
+                font-size: 18px;
+            }
+            .card-content .title {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Tenaga Kependidikan Program Studi Teknik Elektro UNY</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Endra Septato S.Tr.A.B">
+            <div class="card-content">
+                <h2>Endra Septato S.Tr.A.B</h2>
+                <p class="title">Endra Septato merupakan tenaga kependidikan yang bertanggung jawab di Lab. Konversi Sistem Tenaga Listrik dan Lab. Komputer Media C. Beliau aktif mendukung kelancaran praktikum dan pengelolaan perangkat laboratorium di Gedung DPTE. Kedisiplinan dan kecepatan responsnya menjadikan kegiatan belajar berjalan optimal.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Herman Sadikin ">
+            <div class="card-content">
+                <h2>Herman Sadikin </h2>
+                <p class="title">Herman Sadikin adalah tenaga kependidikan yang berperan penting dalam pengelolaan Bangkel Teknologi Mekanik serta beberapa laboratorium lain seperti Lab Listrik Pemakaian dan Lab Aplikasi Komputer. Beliau dikenal dengan keuletannya dalam menangani berbagai kebutuhan teknis praktikum. Saat ini, beliau berkegiatan di Gedung DPTE.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Prof. Dr. Ir. Edy Supriyadi M.Pd.">
+            <div class="card-content">
+                <h2>Nopa Widiyanto, S.T.</h2>
+                <p class="title">Nopa Widiyanto merupakan tenaga kependidikan yang mendukung operasional Lab Robotik, Lab Otomasi, Lab CNC, dan Lab Proteksi Tenaga Listrik. Beliau memiliki latar belakang teknik dan pendidikan, sehingga sangat memahami kebutuhan praktikum mahasiswa. Seluruh aktivitas tersebut beliau jalankan di Gedung IDB dengan penuh dedikasi.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Nur Cahyo Wulandaru S.Pd">
+            <div class="card-content">
+                <h2>Nur Cahyo Wulandaru S.Pd</h2>
+                <p class="title">Nur Cahyo Wulandaru bertugas dalam pemeliharaan lingkungan serta menjaga kebersihan di area RE1-RE2. Beliau selalu sigap dalam memastikan area laboratorium tetap nyaman, bersih, dan aman untuk digunakan. Peran beliau sangat penting dalam mendukung kenyamanan lingkungan belajar.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Supriyono Edy Nugroho">
+            <div class="card-content">
+                <h2>Supriyono Edy Nugroho</h2>
+                <p class="title">Supriyono Edy Nugroho bertugas di Bangkel Instalasi Listrik serta Lab Kontrol Industri dan K3 Listrik di Gedung DPTE. Beliau membantu memfasilitasi kebutuhan praktikum dan menjaga kelayakan alat-alat kerja. Komitmennya terhadap keselamatan dan efisiensi menjadikan praktik berjalan lancar.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="https://teknik-elektro-s1.ft.uny.ac.id//sites/teknik-elektro-s1.ft.uny.ac.id/files/pictures/Ir.%20Rustam%20Asnawi%2C%20%20M.T%2C%20Ph.D%20Depan.jpg" alt="Winarno Surahmad, A.Md.">
+            <div class="card-content">
+                <h2>Winarno Surahmad, A.Md.</h2>
+                <p class="title">Winarno Surahmad bertugas di berbagai ruang penting seperti Lab SMF, Lab Elektronika Daya, Lab Komunikasi Data, serta ruang diskusi, ruang sumber belajar, dan ruang ujian di Gedung TPSDP. Beliau dikenal ramah dan telaten dalam mendampingi mahasiswa selama kegiatan akademik berlangsung. Kinerjanya sangat mendukung terciptanya suasana belajar yang kondusif.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

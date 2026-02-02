@@ -1,0 +1,94 @@
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .PI-wrapper {
+      max-width: 700px;
+      margin: 40px auto;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .PI-heading {
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #003366;
+    }
+
+    .PI-table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .PI-table tr {
+      transition: background 0.3s ease;
+    }
+
+    .PI-table td {
+      padding: 16px 20px;
+      background-color: #f9f9ff;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .PI-table td:first-child {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .PI-table td:last-child {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .PI-table tr:hover td {
+      background-color: #e6f0ff;
+    }
+
+    .download-btn {
+        width: 140px; /* ukuran tetap */
+        text-align: center;
+        background: linear-gradient(135deg, #0056b3, #007bff);
+        color: #fff;
+        padding: 10px 0; /* atas bawah aja, karena lebar tetap */
+        border-radius: 50px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0, 86, 179, 0.3);
+        transition: background 0.3s ease, transform 0.2s ease;
+        display: inline-block;
+        
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(135deg, #004999, #006de0);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+    <div class="PI-wrapper">
+      <h2 class="PI-heading">Pedoman Praktik Industri dan Magang</h2>
+      <table class="PI-table">
+        <thead>
+            <tr>
+                <th>Dokumen</th>
+                <th>Unduh</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pedoman Praktik Industri dan Magang 2023</td>
+                <td><a class="download-btn" href="/sites/ptelektro.ft.uny.ac.id/files/Pedoman%20PI%20dan%20Magang%20FT%20UNY%202023.pdf">Download</a></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+</body>
